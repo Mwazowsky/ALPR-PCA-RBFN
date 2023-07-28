@@ -30,14 +30,14 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/github_username/repo_name">
+  <a href="https://github.com/Mwazowsky/ALPR-PCA-RBFN">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">ALPR-PCA-RBFN</h3>
 
   <p align="center">
-    project_description
+    Automatic License Plate Recognition (ALPR) with machine learning based aproach using Principal Component Analysis (PCA) and Radial Basis Function Neural Network (RBFNN) 
     <br />
     <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
     <br />
@@ -85,7 +85,15 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
+This is ALPR ML based on PCA and RBFNN to segment and recognize character of Indonesian license plate. This project is done for the prerequisite to graduate Bachelor Degree in Computer Science (Informatics Engiineering) at University of Trunojoyo Madura.
+
+With the growing demand for Smart City systems, an accurate and efficient Automatic License Plate Recognition System (ALPRS) becomes essential. This project presents an automated ALPRS that utilizes Principal Component Analysis (PCA) for feature extraction and Radial Basis Function Network (RBF-N) for recognition.
+
+The system consists of two main stages: segmentation and classification. In the segmentation stage, Mathematical Morphology Operations, Histogram Analysis, Connected Component Analysis (CCA), and Hough Transform are applied to extract license plate images accurately. The achieved accuracy on 100 segmented images is 64%.
+
+For character recognition, PCA is employed to reduce the dimensionality of the feature data, and RBF-N is used for classification. The evaluation results reveal that the optimal model, selected based on performance metrics, achieves impressive accuracies of 97.89%, 85.32%, and 42.19% for prediction, character-level implementation, and license plate-level implementation datasets, respectively.
+
+Despite using a relatively small dataset, the proposed implementation demonstrates accuracies of 85.32% and 42.19%, showing promising potential for further research or practical applications. Notably, the algorithm exhibits short training and recognition times, making it a compelling option for future advancements in ALPRS technology
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -93,14 +101,12 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 ### Built With
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+* [![Python][Python]][Python-url]
+* [![OpenCV][OpenCV]][OpenCV-url]
+* [![Keras][Keras]][Keras-url]
+* [![Tensorflow][Tensorflow]][Tensorflow-url]
+* [![Numpy][Numpy]][Numpy-url]
+* [![Scikit-Learn][Scikit-Learn]][Scikit-Learn-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -109,15 +115,20 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+This is an instruction of how to setting up this project locally.
+To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
+This is an list of things you need to use the software and how to install them.
+* python v3.8.0+
   ```sh
-  npm install npm@latest -g
+  python -v
+  ```
+  
+* pip installed
+  ```sh
+  sudo apt install python3-pip
   ```
 
 ### Installation
